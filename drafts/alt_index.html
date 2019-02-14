@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <meta charset="UTF-8">
+  <title>Latitude, cities and weather</title>
+   <!-- Bring in our bootstrap stylesheet -->
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+   <link rel="stylesheet" href="style.css">
+  </head>
+
+<body>
+    <main role="main" class="container-fluid">
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="./index.html">Latitude home</a>
+          </div>
+      
+          <!-- Collect the nav links for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li class="dropdown">  
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="./viz-image-1-temp.html">Max Temperature</a></li>
+                    <li><a href="./viz-image-2-humid.html">Humidity</a></li>
+                    <li><a href="./viz-image-3-cloud.html">Cloudiness</a></li>
+                    <li><a href="./viz-image-4-wind.html">Windspeed</a></li>
+                </ul>   
+              <li><a href="./comparison.html" alt=Comparison of Latitude vs. X >Comparison</a></li>
+              <li><a href="#">Data</a></li>   
+              </li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-7">
+            <div class="panel"> 
+              <div class="panel-heading">Summary: Latitude vs. X</div>
+                <div class="panel-body">
+                  <img id="float" id="center" src="./assets/images/Fig1.png" alt="Latitude vs. Max Temperature" height="150" width="200">
+                  The purpose of this project was to analyze how weather changes as you get closer to the equator.
+                  To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemple a 
+                  dataset on over 500 cities on January 05, 2019.
+                  <br><br>
+                  After assembling the data set, we used Matplotlib to plot 
+                  various aspects of the weather vs latitdue. Factors we looked at included: temperature, 
+                  cloudiness, wind speed, and humidity. This site provides the source data and visualitions 
+                  created as part of the analysis, as well as an explanation and descriptions of any 
+                  trends or relationships.</div>
+              </div> <!-- /.panel collapse -->    
+            </div> <!-- /.col-lg-7 collapse -->
+            <div class="col-lg-5">
+              <div class="panel">  
+                <div class="panel-heading">Visualizations</div>
+                  <div class="panel-body" id="center">
+                      <a target="_blank" href="./viz-image-1-temp.html">
+                    <img src="./assets/images/Fig1.png" alt="Latitude vs. Max Temperature" height="160" width="160">
+                    </a>
+                    <a target="_blank" href="./viz-image-2-humid.html">
+                      <img src="./assets/images/Fig2.png" alt="Latitude vs. Humidity" height="160" width="160">
+                    </a>
+                    <a target="_blank" href="./viz-image-3-cloud.html">
+                      <img src="./assets/images/Fig3.png" alt="Latitude vs. Cloudiness" height="160" width="160">
+                    </a>      
+                      <a target="_blank" href="./viz-image-4-wind.html"> 
+                    <img src="./assets/images/Fig4.png" alt="Latitude vs. Windspeed" height="160" width="160">
+                      </a></div>      
+                </div> <!-- /.panel collapse -->
+              </div> <!-- /.col-lg5 collapse -->
+            </div>    
+        </main>
+
+<div class="container-fluid">
+  <footer class="footer">
+    <p>Laura Knapp Lancheros</p>
+    </div>
+  <div>
+</footer>
+
+</body>
+</html>
