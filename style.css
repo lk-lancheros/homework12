@@ -37,6 +37,9 @@ body > .container {
   text-align: center;
   width: 100%;
   height: auto;
+  font-weight: bold;
+  font-size: 24px; 
+  color:rgb(13, 17, 228);  
 }
 
 #float{
