@@ -3,7 +3,7 @@
 
 
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
   <title>Latitude, cities and weather</title>
    <!-- Bring in our bootstrap stylesheet -->
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -14,8 +14,7 @@
   </head>
 
 <body>
-    <main role="main" class="container-fluid">
-      <nav class="navbar navbar-default">
+    <nav class="navbar navbar-default">
         <div class="container-fluid">
           <!-- Brand and toggle get grouped for better mobile display -->
           <div class="navbar-header">
@@ -25,7 +24,7 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="./index.html">Latitude home</a>
+            <a class="navbar-brand" href="index.html">Latitude home</a>
           </div>
       
           <!-- Collect the nav links for toggling -->
@@ -36,73 +35,50 @@
               <li class="dropdown">  
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
                 <ul class="dropdown-menu">
-                    <li><a href="./viz-image-1-temp.html">Max Temperature</a></li>
-                    <li><a href="./viz-image-2-humid.html">Humidity</a></li>
-                    <li><a href="./viz-image-3-cloud.html">Cloudiness</a></li>
-                    <li><a href="./viz-image-4-wind.html">Windspeed</a></li>
+                    <li><a href="viz-image-1-temp.html">Max Temperature</a></li>
+                    <li><a href="viz-image-2-humid.html">Humidity</a></li>
+                    <li><a href="viz-image-3-cloud.html">Cloudiness</a></li>
+                    <li><a href="viz-image-4-wind.html">Windspeed</a></li>
                 </ul>   
-              <li><a href="./comparison.html" alt=Comparison of Latitude vs. X >Comparison</a></li>
-              <li><a href="#">Data</a></li>   
+              <li><a href="comparison.html" alt="Comparison of Latitude vs. X" >Comparison</a></li>
+              <li><a href="data.html">Data</a></li>   
               </li>
             </ul>
           </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
-      </nav>
+      </nav>      
       <div class="container-fluid">
         <div class="row">
-          <div class="col-lg-12">
-            <div class="panel"> 
-              <div class="panel-heading">Comparison: Latitude vs X</div>
-                <div class="panel-body">
-                  Click any plot to get an in-depth analysis.</div>
-              </div> <!-- /.panel collapse -->    
-            </div> <!-- /.col-lg-12 collapse -->
-        </div> <!-- / .row collapse -->
+          <div class="col-md-12">
+            <h1>Comparison: Latitude vs X</h1>
+            </div> <!-- /col-md-12 collapse -->
+          </div> <!-- /.row collapse -->           
         <div class="row">
-          <div class="col-lg-6">
-            <div class="panel">  
-              <div class="panel-heading">vs. Max Temperature</div>
-                <div class="panel-body"id="center">
-                  <a target="_blank" href="./viz-image-1-temp.html">
-                  <img src="./assets/images/Fig1.png" alt="Latitude vs. Max Temperature" height="160" width="160"></a>
-              </div> <!-- /.panel collapse body -->
-            </div> <!-- /.panel collapse -->
-          </div> <!-- /.col-lg-6 collapse -->   
-          <div class="col-lg-6">
-            <div class="panel">  
-              <div class="panel-heading">vs. Humidity</div>
-                <div class="panel-body" id="center">
-                  <a target="_blank" href="./viz-image-2-humid.html">
-                  <img src="./assets/images/Fig2.png" alt="Latitude vs. Humidity" height="160" width="160"></a>
-                </div> <!-- /.panel collapse body -->
-              </div> <!-- /.panel collapse -->
-            </div> <!-- /.col-lg-6 collapse --> 
-        </div>
-        <div class="row">
-            <div class="col-lg-6">
-              <div class="panel">  
-                <div class="panel-heading">vs. Cloudiness</div>
-                  <div class="panel-body" id="center">
-                    <a target="_blank" href="./viz-image-3-cloud.html">
-                    <img src="./assets/images/Fig3.png" alt="Latitude vs. Cloudiness" height="160" width="160"></a>
-                </div> <!-- /.panel collapse body -->
-              </div> <!-- /.panel collapse -->
-            </div> <!-- /.col-lg-6 collapse -->   
-            <div class="col-lg-6">
-              <div class="panel">  
-                <div class="panel-heading">vs. Windspeed</div>
-                  <div class="panel-body" id="center">
-                    <a target="_blank" href="./viz-image-4-wind.html">
-                    <img src="./assets/images/Fig4.png" alt="Latitude vs. Wind Speed" height="160" width="160"></a>
-                  </div> <!-- /.panel collapse body -->
-                </div> <!-- /.panel collapse -->
-              </div> <!-- /.col-lg-6 collapse --> 
-          </div>                  
-        </main>
-      <footer class="footer">
-        <div class="container-fluid">
-          <p>Laura Knapp Lancheros</p>
-          </div>
-      </footer>
+          <div class="col-md-6">            
+            <a href="viz-image-1-temp.html">
+            <img src="./assets/images/Fig1.png" alt="Latitude vs. Max Temperature" height="150" width="180"> 
+            </a>
+          </div> <!-- /col-md-6 collapse -->
+          <div class="col-md-6">   
+            <a href="viz-image-2-humid.html">
+            <img src="./assets/images/Fig2.png" alt="Latitude vs. Humidity" height="150" width="180">
+            </a>
+          </div> <!-- /col-md-6 collapse -->
+        </div> <!-- /.row collapse --> 
+        <div class="row">               
+            <div class="col-md-6"></div>
+              <a href="viz-image-3-cloud.html">
+                <img src="./assets/images/Fig3.png" alt="Latitude vs. Cloudiness" height="150" width="180"> 
+              </a>      
+          </div> <!-- /col-md-6 collapse -->
+            <a href="viz-image-4-wind.html"> 
+              <img src="./assets/images/Fig4.png" alt="Latitude vs. Windspeed" height="150" width="180">
+            </a>   
+        </div> <!-- /.col-md-6 collapse -->
+      </div> <!-- /.row collapse -->
+    </div>  <!-- /.container collapse -->      
+  <footer class="footer">
+    <p>Laura Knapp Lancheros</p>
+  </footer>
 </body>
 </html>

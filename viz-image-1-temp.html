@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
   <title>Latitude, cities and weather</title>
    <!-- Bring in our bootstrap stylesheet -->
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -13,7 +14,7 @@
   </head>
 
 <body>
-    <main role="main" class="container-fluid">
+    <!-- <main role="main" class="container-fluid"> -->
       <nav class="navbar navbar-default">
         <div class="container-fluid">
           <!-- Brand and toggle get grouped for better mobile display -->
@@ -24,7 +25,7 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="./index.html">Latitude home</a>
+            <a class="navbar-brand" href="index.html">Latitude home</a>
           </div>
       
           <!-- Collect the nav links for toggling -->
@@ -35,57 +36,56 @@
               <li class="dropdown">  
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
                 <ul class="dropdown-menu">
-                    <li><a href="./viz-image-1-temp.html">Max Temperature</a></li>
-                    <li><a href="./viz-image-2-humid.html">Humidity</a></li>
-                    <li><a href="./viz-image-3-cloud.html">Cloudiness</a></li>
-                    <li><a href="./viz-image-4-wind.html">Windspeed</a></li>
+                    <li><a href="viz-image-1-temp.html">Max Temperature</a></li>
+                    <li><a href="viz-image-2-humid.html">Humidity</a></li>
+                    <li><a href="viz-image-3-cloud.html">Cloudiness</a></li>
+                    <li><a href="viz-image-4-wind.html">Windspeed</a></li>
                 </ul>   
-              <li><a href="./comparison.html" alt=Comparison of Latitude vs. X >Comparison</a></li>
-              <li><a href="#">Data</a></li>   
+              <li><a href="comparison.html" alt="Comparison of Latitude vs. X" >Comparison</a></li>
+              <li><a href="data.html">Data</a></li>   
               </li>
             </ul>
           </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
-      </nav>
+      </nav>      
       <div class="container-fluid">
         <div class="row">
-          <div class="col-lg-7">
+          <div class="col-md-7">
             <div class="panel"> 
-              <div class="panel-heading" id="center"class="panel-formatting">Maximum Temperature</div>
+              <div class="panel-heading" id="center">Max Temperature</div>
                 <div class="panel-body">
-                    <img id="center" src="./assets/images/Fig1.png" alt="Latitude vs. Max Temperature" height="50" width="50">
-                      <p> There is a relationship between latitude and temperature! 
-                        There are some extreme outliers in 
-                        both ends of the temperature spectrum. There are three cities in Australia 
-                        with temperatures of more than 100 degrees Fahrenheit. There are four cities in 
-                        Russia with temperatures below minus 50 or more.</p>
+                  <img  id="center_img" src="./assets/images/Fig1.png" alt="Max Temperature">
+                  <p>There is a relationship between latitude and temperature! 
+                    The closer to the equator the warmer the temperature tends to be. 
+                    The tilt of the earth also influences temperatures. When this data was collected, 
+                    the southern hemipshere cities (-latitude) were warmer than northern hemipshere 
+                    (+latitude) cities. The hotest max temperture reported that day was 104 in Broken Hill, Australia.</p> 
                 </div>
               </div> <!-- /.panel collapse -->    
             </div> <!-- /.col-lg-7 collapse -->
-            <div class="col-lg-5">
+            <div class="col-md-5">
               <div class="panel">  
                 <div class="panel-heading" id="center">Visualizations</div>
                   <div class="panel-body" id="center">
-                      <a target="_blank" href="./viz-image-1-temp.html">
-                    <img id="call" src="./assets/images/Fig1.png" alt="Latitude vs. Max Temperature" height="150" width="180">
+                      <a href="viz-image-1-temp.html">
+                    <img id="call" src="./assets/images/Fig1.png" alt="Latitude vs. Max Temperature" height="150" width="180"> 
                     </a>
-                    <a target="_blank" href="./viz-image-2-humid.html">
+                    <a href="viz-image-2-humid.html">
                       <img src="./assets/images/Fig2.png" alt="Latitude vs. Humidity" height="150" width="180">
                     </a>
-                    <a target="_blank" href="./viz-image-3-cloud.html">
-                      <img src="./assets/images/Fig3.png" alt="Latitude vs. Cloudiness" height="150" width="180">
+                    <a href="viz-image-3-cloud.html">
+                      <img src="./assets/images/Fig3.png" alt="Latitude vs. Cloudiness" height="150" width="180"> 
                     </a>      
-                      <a target="_blank" href="./viz-image-4-wind.html"> 
+                      <a href="viz-image-4-wind.html"> 
                     <img src="./assets/images/Fig4.png" alt="Latitude vs. Windspeed" height="150" width="180">
                       </a></div>      
                 </div> <!-- /.panel collapse -->
               </div> <!-- /.col-lg5 collapse -->
-            </div>    
-        </main>
-      <footer class="footer">
-        <div class="container">
-          <p id="white">Laura Knapp Lancheros</p>
-          </div>
-      </footer>
+            </div> <!-- /.row collapse -->
+          </div>  <!-- /.container collapse -->      
+        <!-- </main> -->
+  <footer class="footer">
+    <p>Laura Knapp Lancheros</p>
+  </footer>
 </body>
 </html>

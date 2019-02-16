@@ -1,3 +1,12 @@
+html {
+  position: relative;
+  min-height: 100%;
+} */
+
+body {
+  margin-bottom: 150px;
+}
+
 .navbar {
   position: relative;
   min-height: 50px;
@@ -14,15 +23,6 @@
   border: 2px solid rgb(13, 17, 228);  
   background:  rgb(111, 111, 116);  
 }
-
-body > .container {
-  padding: 60px 15px 0;
-}
-
-.footer > .container {
-  padding-right: 15px;
-  padding-left: 15px;
-} 
 
 .panel-formatting {
   color:rgb(13, 17, 228);  
@@ -42,6 +42,13 @@ body > .container {
   color:rgb(13, 17, 228);  
 }
 
+#center_img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+
 #float{
   float: left;
   margin: 5px;
@@ -50,9 +57,14 @@ body > .container {
  #call {
    border: 3px solid rgb(13, 17, 228); 
  }
+
+ p {
+  margin: 10px 10px 10px;
+}
+
 .footer {
   background:  rgb(111, 111, 116);  
-  position: relative;
+  /* position: relative; */
   min-height: 50px;
   border-top: 3px solid  rgb(13, 17, 228);
   text-align: center;
@@ -60,11 +72,11 @@ body > .container {
   font-weight: bold;
 }
 
-}
+/* }
 [class*="col-"] {
   float: left;
   padding: 5px;
-}
+} */ */
 
 @media only screen and (min-width: 768px) {
   /* For desktop: */
@@ -130,4 +142,13 @@ body > .container {
   height: 30px;
   line-height: 30px;
   font-size: 12px;
+}  */
+
+/* span {
+  padding: 15px 15px 15px;
+} */
+
+/*.footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
 }  */

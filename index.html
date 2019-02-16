@@ -14,7 +14,7 @@
   </head>
 
 <body>
-    <main role="main" class="container-fluid">
+    <!-- <main role="main" class="container-fluid"> -->
       <nav class="navbar navbar-default">
         <div class="container-fluid">
           <!-- Brand and toggle get grouped for better mobile display -->
@@ -25,7 +25,7 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="./index.html">Latitude home</a>
+            <a class="navbar-brand" href="index.html">Latitude home</a>
           </div>
       
           <!-- Collect the nav links for toggling -->
@@ -36,36 +36,36 @@
               <li class="dropdown">  
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
                 <ul class="dropdown-menu">
-                    <li><a href="./viz-image-1-temp.html">Max Temperature</a></li>
-                    <li><a href="./viz-image-2-humid.html">Humidity</a></li>
-                    <li><a href="./viz-image-3-cloud.html">Cloudiness</a></li>
-                    <li><a href="./viz-image-4-wind.html">Windspeed</a></li>
+                    <li><a href="viz-image-1-temp.html">Max Temperature</a></li>
+                    <li><a href="viz-image-2-humid.html">Humidity</a></li>
+                    <li><a href="viz-image-3-cloud.html">Cloudiness</a></li>
+                    <li><a href="viz-image-4-wind.html">Windspeed</a></li>
                 </ul>   
-              <li><a href="./comparison.html" alt=Comparison of Latitude vs. X >Comparison</a></li>
-              <li><a href="./data.html">Data</a></li>   
+              <li><a href="comparison.html" alt="Comparison of Latitude vs. X" >Comparison</a></li>
+              <li><a href="data.html">Data</a></li>   
               </li>
             </ul>
           </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
-      </nav>      <div class="container-fluid">
+      </nav>      
+      <div class="container-fluid">
         <div class="row">
           <div class="col-md-7">
             <div class="panel"> 
               <div class="panel-heading" id="center">Summary: Latitude vs. X</div>
                 <div class="panel-body">
-                  <img id="float" id="center" src="./assets/images/Fig1.png" alt="Latitude vs. Max Temperature" height="300" width="360">
-                  The purpose of this project was to analyze how weather changes based on latitude or 
+                  <img id="float" id="center" src="./assets/images/Fig1.png" alt="Latitude vs. Max Temperature">
+                  <p>The purpose of this project was to analyze how weather changes based on latitude or 
                   how close you are to the earh's equator (latitude zero).
                   To accomplish this task, we first generated a list of random geocoordiates or 
-                  latitude and longitude.  Then we found the cities closest to those coordinates. On January 15, 2019
+                  latitude and longitude.  Then we found the cities closest to those coordinates.</p> 
+                  <p>On January 15, 2019
                   we pulled  weather data from the OpenWeatherMap API to assemple a 
-                  dataset with  over 500 cities .
-                  <br>
-                  After assembling the data set, we used Matplotlib to visualize or plot 
+                  dataset with  over 500 cities. Then we used Matplotlib to visualize or plot 
                   various aspects of the weather vs latitdue. Factors we looked at included: temperature, 
                   cloudiness, wind speed, and humidity. This website provides the source data and visualitions 
                   created as part of the analysis, as well as an explanation and descriptions of any 
-                  trends or relationships.
+                  trends or relationships.</p>
                 </div>
               </div> <!-- /.panel collapse -->    
             </div> <!-- /.col-lg-7 collapse -->
@@ -73,26 +73,25 @@
               <div class="panel">  
                 <div class="panel-heading" id="center">Visualizations</div>
                   <div class="panel-body" id="center">
-                      <a target="_blank" href="./viz-image-1-temp.html">
-                    <img src="./assets/images/Fig1.png" alt="Latitude vs. Max Temperature" height="150" width="180">
+                      <a href="viz-image-1-temp.html">
+                    <img src="./assets/images/Fig1.png" alt="Latitude vs. Max Temperature" height="150" width="180"> 
                     </a>
-                    <a target="_blank" href="./viz-image-2-humid.html">
+                    <a href="viz-image-2-humid.html">
                       <img src="./assets/images/Fig2.png" alt="Latitude vs. Humidity" height="150" width="180">
                     </a>
-                    <a target="_blank" href="./viz-image-3-cloud.html">
-                      <img src="./assets/images/Fig3.png" alt="Latitude vs. Cloudiness" height="150" width="180">
+                    <a href="viz-image-3-cloud.html">
+                      <img src="./assets/images/Fig3.png" alt="Latitude vs. Cloudiness" height="150" width="180"> 
                     </a>      
-                      <a target="_blank" href="./viz-image-4-wind.html"> 
+                      <a href="viz-image-4-wind.html"> 
                     <img src="./assets/images/Fig4.png" alt="Latitude vs. Windspeed" height="150" width="180">
                       </a></div>      
                 </div> <!-- /.panel collapse -->
               </div> <!-- /.col-lg5 collapse -->
-            </div>    
-        </main>
-      <footer class="footer">
-        <div class="container">
-          <p id="white">Laura Knapp Lancheros</p>
-          </div>
-      </footer>
+            </div> <!-- /.row collapse -->
+          </div>  <!-- /.container collapse -->      
+        <!-- </main> -->
+  <footer class="footer">
+    <p>Laura Knapp Lancheros</p>
+  </footer>
 </body>
 </html>
